@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        any {
+        docker {
             image 'node:buster-slim' 
             args '-p 3000:3000' 
         }
